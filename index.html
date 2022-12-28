@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Wabi sabi</title>
     <link rel="stylesheet" href="./css/index.css" >
+    <link rel="stylesheet" href="./css/global.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -11,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
+<body id="body" onscroll="sakrijLogo()">
+    <nav id="nav" onmouseenter="otkrijLogo()">
         <a href="#">
                 <span class="inner">
                     <span class="content" style="opacity: 0;" >Wabi-sabi</span>
@@ -45,7 +46,7 @@
                 It's about discovering the beauty in nature's flaws and cycles of development, rot, and death.</p>
         </section>
         <section class="wrapper">
-            <div class="card fullscreen">
+            <div class="card fullscreen flex-center-column">
                 <p>Therefore, I leave this website up to your exploration.</p>
                 <p>But first, lets see how the term Wabi-Sabi was coined.</p>
                 <p>Wabi-sabi originated from two separate words.
@@ -83,9 +84,9 @@
             </div>
         </section>
         <footer>
-            back to top
+            <figure onclick="backToTop()"><img src="pictures/logo.png"></figure>
         </footer>
     </main>
-    <script src="javascripts/indexAnimations.js"></script>
+    <script src="./javascripts/indexAnimations.js"></script>
 </body>
 </html>

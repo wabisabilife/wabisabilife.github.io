@@ -1,4 +1,48 @@
 
+function backToTop(){
+    console.log("ae")
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    })
+}
+
+let logo = document.getElementsByClassName('icon')[0];
+let body = document.getElementById('body');
+let prosliScroll = 0
+
+function sakrijLogo(){
+    let navHoveran = nav.matches(':hover')
+    console.log(navHoveran)
+    if(window.scrollY > prosliScroll && !navHoveran ) logo.classList.add('transparent');
+    else logo.classList.remove('transparent');
+    prosliScroll = window.scrollY;
+}
+let nav = document.getElementById('nav');
+function otkrijLogo(){console.log("ebnter");logo.classList.remove('transparent');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 // prikazivanje side navbara
 
 let side_icon = document.getElementById("side_icon");
@@ -47,3 +91,6 @@ document.addEventListener("scroll",()=>{
     console.log(window.scrollY, "  ", main.scrollHeight - screen.height)
     if(wrapper_strelica.offsetTop <= window.scrollY) console.log("radi");
 })
+
+
+ */

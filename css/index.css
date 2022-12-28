@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background: lightgray;
+    background: var(--lightest);
+    color: var(--dark);
     overflow-x: hidden;
 }
 
@@ -21,7 +22,7 @@ img {
 }
 
 a {
-    color: black;
+    color: var(--dark);
     text-decoration: none;
 }
 
@@ -33,6 +34,10 @@ span.icon {
     left: 0;
     padding: 0.3em;
     display: flex;
+    transition: all 0.3s;
+}
+span.icon.transparent {
+    opacity: 0;
 }
 
 nav {
@@ -49,7 +54,7 @@ nav:hover span.inner {
     transform: translateY(-100%);
 }
 nav:hover span.icon {
-    opacity: 0.7;
+    /* effect na ikonicu */
 }
 nav:hover section.dropdown {
     transform: translateY(0);
@@ -74,7 +79,7 @@ nav > a {
 section.dropdown {
     position: absolute;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--light);
     top: 0;
     height: 60vh;
     width: 100%;
@@ -112,49 +117,58 @@ ul li a {
 
 /* page styling */
 
-body {
-    background: linear-gradient(#e8e8e8, #e0e0e0);
-}
-
 main {
     z-index: -2;
     position: relative;
     padding-top: 100px;
 }
-p {
-    max-width: 50rem
+h1 {
+    font-size: 5em;
 }
 
+p {
+    font-size: 1.5em;
+    max-width: 50rem
+}
+.center_text {
+    text-align: center;
+}
 
+footer figure {
+    position: relative;
+    z-index: 10;
+    max-width: 50px;
+    margin: 10px auto;
+}
 
 /* cards */
+
 .wrapper {
     padding-top: 150px;
     padding-bottom: 100px;
     margin: 0 auto;
 }
+
 .card {
     top: 30px;
     position: sticky;
-    border: 1px solid #ccc;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    color: #333;
     padding: 40px;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 .card h2 {
     padding: 0;
+    color: var(--lightest);
 }
 .card:nth-child(1n) {
     top: 20px;
 }
 .card:nth-child(2n) {
     top: 40px;
+    background: var(--orange);
 }
 .card:nth-child(3n) {
     top: 60px;
+    background: var(--medium);
 }
 .card:nth-child(4n) {
     top: 80px;
