@@ -1,8 +1,38 @@
-article {
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-between;
+
+main {
+    padding-top: 50px;
 }
-article >* {
-    max-width: 40%;
+
+figure {
+    margin: 4em auto;
+}
+
+h1 {
+    margin: 2em 1em 0.3em 1em;
+    max-width: 30rem;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 4em 3em 1em 3em;
+}
+
+p {
+    max-width: 45rem;
+    margin: 0.3em 4.5em;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.pola-pola figure {
+    max-width: 400px;
+}
+.pola-pola {
+    align-items: center;
+}
+article {
+    margin-bottom: 100px;
 }

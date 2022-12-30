@@ -1,1 +1,22 @@
+html {
+    background-image: url("../pictures/bgd.jpg");
+    background-size: 100vw;
+}
+body {
+    background: none;
+}
+h1 {
+    margin: 3em 1em 0.3em 1em;
+    display: block;
+}
 
+p {
+    max-width: 50rem;
+    margin: 0.3em 4.5em;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
