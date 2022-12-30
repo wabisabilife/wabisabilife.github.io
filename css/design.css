@@ -6,11 +6,3 @@ article {
 article >* {
     max-width: 40%;
 }
-
-figure {
-    margin: 0;
-}
-
-h1 {
-    color: var(--lightest);
-}

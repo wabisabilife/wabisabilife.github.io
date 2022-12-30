@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Design principles</title>
+    <link rel="stylesheet" href="../css/design.css" >
+    <link rel="stylesheet" href="../css/global.css" >
 </head>
-<body>
+<body id="body" onscroll="sakrijLogo()">
+    <nav id="nav" onmouseenter="otkrijLogo()">
+    <a href="#body">
+            <span class="inner">
+                <span class="content" style="opacity: 0;" >Wabi-sabi</span>
+            </span>
+        <span class="inner" aria-hidden="true">
+                <span class="content">Wabi-sabi</span>
+            </span>
+        <span class="icon"><img src="../pictures/logo.png"> </span>
+    </a>
 
+    <section class="dropdown">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./connection_with_tea.html">A connection with tea</a></li>
+            <li><a href="./design_principles.html">Desing principles</a></li>
+            <li><a href="./why_wabi_sabi.html">Why Wabi-Sabi?</a></li>
+        </ul>
+    </section>
+</nav>
+    <main>
+        <article>
+            <div class="flex-center-column left_text">
+                <h1>Design principles</h1>
+                <div class="orange_dot" ></div>
+                <p>The elements that make up this type of design are: rough finish, simplicity and minimalism,
+                    asymmetry, imbalance, flat and neutral colors, textures, organic influences,
+                    disharmony. Designers who inject a bit of wabi-sabi into their design give it more life,
+                    even though we're talking about digital media.
+                    Wabi-sabi beauty provides a visual balance to projects because it is basically the
+                    opposite of a design style based on a polished digital screen.
+                </p>
+            </div>
+            <figure><img src="../pictures/dp/chingchongkrug.png"></figure>
+        </article>
+        <div class="flex-center-column">
+            <p class="center_text">If we marked the key types of Japanese taste on a spectrum, it would look something like this</p>
+            <figure><img src="../pictures/dp/timelineTemplate.jpg"></figure>
+        </div>
+
+    </main>
+    <script src="../javascripts/indexAnimations.js" ></script>
 </body>
 </html>
