@@ -1,4 +1,3 @@
-
 function backToTop(){
     console.log("ae")
     window.scrollTo({
@@ -26,11 +25,11 @@ function otkrijLogo(){console.log("ebnter");logo.classList.remove('transparent')
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        console.log(entry.isIntersecting)
         if(entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target) }
-    }, {
-        rootMargin: "-200px",
-        threshold: 0.8
     })
+}, {
+    rootMargin: "-150px"
 })
 
 setTimeout(()=>{
