@@ -11,7 +11,7 @@
 */
 .scroll-indicator-controller {
   position: fixed;
-  top: 50vh;
+  top: 40vh;
   transform: translate(0, -50%);
   right: 10px;
   z-index: 999;
@@ -38,7 +38,6 @@
 }
 .scroll-indicator-controller > div span {
   color: tomato;
-  text-shadow: var(--dark) 1px 1px;
   position: absolute;
   right: calc(100% + 8px);
   white-space: nowrap;

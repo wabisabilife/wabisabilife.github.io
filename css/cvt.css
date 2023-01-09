@@ -16,7 +16,7 @@ h2 {
 
 p {
     max-width: 45rem;
-    margin: 0.3em 4.5em;
+    margin: 1em 4.5em;
 }
 .left-column {
     display: flex;
@@ -29,6 +29,9 @@ p {
 
 .pola-pola.prvi {
     margin-top: 0px;
+}
+.prvi h2 {
+    margin-top: 1rem;
 }
 .odmaknut {
     margin: 1em 3em;
