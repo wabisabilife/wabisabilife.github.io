@@ -62,7 +62,7 @@ h1 {
 }
 
 .card:nth-child(2n) {
-    background: var(--orange);
+    background: var(--light);
 }
 .card:nth-child(3n) {
     background: var(--medium);
