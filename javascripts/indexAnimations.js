@@ -48,8 +48,8 @@ setTimeout(()=>{
 
 setTimeout(()=>{
     malo_kasniji = document.querySelectorAll('.malo_kasnija_animacija')
-    malo_kasniji.forEach(el => {el.classList.add('show')})
-},500)
+    malo_kasniji.forEach(el => {el.classList.add('pop')})
+},700)
 
 
 

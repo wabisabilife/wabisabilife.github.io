@@ -212,9 +212,16 @@ footer figure {
     transition: all 0.7s;
 }
 
-
 .fader.show {
     opacity: 1;
     transform: translateY(0);
 }
 
+.malo_kasnija_animacija {
+    transform: scale(0);
+    transition: all 0.3s ;
+}
+
+.malo_kasnija_animacija.pop {
+    transform: scale(100%)
+}
