@@ -209,7 +209,7 @@ footer figure {
 .fader {
     opacity: 0;
     transform: translateY(10px);
-    transition: all 1s;
+    transition: all 0.7s;
 }
 
 
