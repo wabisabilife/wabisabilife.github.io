@@ -64,7 +64,12 @@
                     <p class="fader">As the Buddhist priest Kenko wrote seven centuries ago: "Should we look at spring flowers only when they are in full bloom, and the moon when the sky is clear and cloudless?" </p>
                     <p class="fader">Beauty is not visible only in what is joyful, loud or obvious.</p>
                 </div>
-                <figure class="fader"><img src="pictures/wabi.png"></figure>
+                <figure>
+                    <video width="320" height="320" muted id="wabivideo">
+                        <source src="./pictures/wabi1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
             </div>
 
             <div class="card fullscreen">
@@ -94,5 +99,20 @@
         </footer>
     </main>
     <script src="./javascripts/indexAnimations.js"></script>
+    <script>
+        //za playanje video animacije
+
+        const videoobserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) { entry.target.play(); observer.unobserve(entry.target) }
+            })
+        }, {
+            rootMargin: "-200px"
+        })
+
+        videoobserver.observe(document.getElementById("wabivideo"))
+        //videoobserver.observe(document.getElementById("sabivideo"))
+
+    </script>
 </body>
 </html>
