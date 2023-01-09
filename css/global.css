@@ -205,3 +205,16 @@ footer figure {
 .pola-pola >* {
     max-width: 55%;
 }
+
+.fader {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s;
+}
+
+
+.fader.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+

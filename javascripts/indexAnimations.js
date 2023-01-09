@@ -22,6 +22,35 @@ function sakrijLogo(){
 let nav = document.getElementById('nav');
 function otkrijLogo(){console.log("ebnter");logo.classList.remove('transparent');}
 
+//intersection observer code
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target) }
+    }, {
+        rootMargin: "-200px",
+        threshold: 0.8
+    })
+})
+
+setTimeout(()=>{
+    elements = document.querySelectorAll('.fader')
+    elements.forEach(element => {
+        observer.observe(element)
+    })
+}, 1300)
+
+
+setTimeout(()=>{
+    raniji = document.querySelectorAll('.ranija_animacija')
+    raniji.forEach(rani => {rani.classList.add('show')})
+},300)
+
+
+setTimeout(()=>{
+    malo_kasniji = document.querySelectorAll('.malo_kasnija_animacija')
+    malo_kasniji.forEach(el => {el.classList.add('show')})
+},500)
 
 
 
