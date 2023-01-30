@@ -1,5 +1,5 @@
 :root{
-    --lightest: rgb(253, 249, 242);
+    --lightest: #fffaf3;
     --light: rgba(233, 168, 138);
     --medium: #C0685F;
     --dark: #671B11;
@@ -174,7 +174,7 @@ main {
 h1 {
     font-size: 5em;
     color: var(--orange);
-    line-height:1em ;
+    line-height:1em;
 }
 h2 {
     font-size: 4em;
