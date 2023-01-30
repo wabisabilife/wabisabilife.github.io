@@ -46,7 +46,10 @@ p {
 .hover-image:hover img {
     filter: blur(2px) brightness(0.9);
 }
-
+.hover-image img {
+    transition: all 0.3s;
+    filter: blur(0px) brightness(1);
+}
 
 .hover-image span {
     color: var(--lightest);
