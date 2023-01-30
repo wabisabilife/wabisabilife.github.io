@@ -43,10 +43,10 @@ p {
     transition: all 1s;
 }
 
-.hover-image:hover img {
-    filter: blur(2px) brightness(0.9);
+.hover-image:hover img, .hover-image:hover video {
+    filter: blur(3px) brightness(0.9);
 }
-.hover-image img {
+.hover-image img, .hover-image video{
     transition: all 0.3s;
     filter: blur(0px) brightness(1);
 }
@@ -65,4 +65,7 @@ p {
 .hover-image:hover span {
     opacity: 1;
     transform: translate(-50%, -50%);
+}
+span.wide {
+    width: 80%;
 }
