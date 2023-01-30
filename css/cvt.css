@@ -5,18 +5,19 @@ figure {
 
 h1 {
     color: var(--lightest);
-    margin: 2em 1em 0.3em 1em;
-    max-width: 40rem;
+    margin: 100px 1em 20px 80px;
+    max-width: 50rem;
 }
 
 h2 {
     font-size: 2em;
-    margin: 4em 3em 1em 3em;
+    margin: 4em 3em 1em 80px;
+    color: var(--light);
 }
 
 p {
     max-width: 45rem;
-    margin: 1em 4.5em;
+    margin: 20px 80px;
 }
 .left-column {
     display: flex;
@@ -24,14 +25,14 @@ p {
     width: fit-content;
 }
 .pola-pola figure {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .pola-pola.prvi {
     margin-top: 0px;
 }
 .prvi h2 {
-    margin-top: 1rem;
+    margin-top: 80px;
 }
 .odmaknut {
     margin: 1em 3em;

@@ -22,7 +22,7 @@ h1 {
 .card {
     top: 30px;
     position: sticky;
-    padding: 40px;
+    padding: 20px 80px;
     padding-top: 100px;
     margin-bottom: 20px;
     display: flex;

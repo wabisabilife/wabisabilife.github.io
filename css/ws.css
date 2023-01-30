@@ -4,13 +4,13 @@ main {
     background-repeat: no-repeat;
 }
 h1 {
-    margin: 3em 1em 0.3em 1em;
+    margin: 3em 1em 20px 80px;
     display: block;
 }
 
 p {
     max-width: 50rem;
-    margin: 0.3em 4.5em;
+    margin: 20px 4.5em;
 }
 
 .left-column {

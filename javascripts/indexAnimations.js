@@ -25,7 +25,6 @@ function otkrijLogo(){console.log("ebnter");logo.classList.remove('transparent')
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry.isIntersecting)
         if(entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target) }
     })
 }, {
@@ -49,7 +48,8 @@ setTimeout(()=>{
 setTimeout(()=>{
     malo_kasniji = document.querySelectorAll('.malo_kasnija_animacija')
     malo_kasniji.forEach(el => {el.classList.add('pop')})
-},700)
+},900)
+
 
 
 
