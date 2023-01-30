@@ -66,7 +66,7 @@
                 </div>
                 <figure>
                     <video width="320" height="320" muted id="wabivideo">
-                        <source src="./pictures/wabi1.mp4" type="video/mp4">
+                        <source src="./pictures/wabi_bkg.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </figure>
@@ -91,7 +91,12 @@
                         the natural cycle of life and our own mortality.
                     </p>
                 </div>
-                <figure><img src="pictures/sabi.png"></figure>
+                <figure>
+                    <video width="320" height="320" muted id="sabivideo">
+                        <source src="./pictures/sabi_bkg.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
             </div>
         </section>
         <footer>
@@ -111,7 +116,7 @@
         })
 
         videoobserver.observe(document.getElementById("wabivideo"))
-        //videoobserver.observe(document.getElementById("sabivideo"))
+        videoobserver.observe(document.getElementById("sabivideo"))
 
     </script>
 </body>
