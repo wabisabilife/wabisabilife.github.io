@@ -10,14 +10,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
-    margin: 4em 3em 1em 80px;
+    font-size: 1em;
+    margin: 1em 2em 1em 80px;
     color: var(--light);
 }
 
 p {
     max-width: 45rem;
-    margin: 20px 80px;
+    margin: 20px 20px 20px 80px;
 }
 .left-column {
     display: flex;
@@ -25,14 +25,14 @@ p {
     width: fit-content;
 }
 .pola-pola figure {
-    max-width: 600px;
+    max-width: min(600px, 45%);
 }
 
 .pola-pola.prvi {
     margin-top: 0px;
 }
 .prvi h2 {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .odmaknut {
     margin: 1em 3em;
@@ -68,4 +68,22 @@ p {
 }
 span.wide {
     width: 80%;
+}
+
+/* Telefon */
+@media only screen and (max-width: 600px) {
+    .pola-pola {
+        flex-direction: column;
+    }
+
+    .pola-pola >* {
+        max-width: 100%;
+    }
+    .pola-pola:nth-child(4n){
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+    .pola-pola figure {
+        max-width: 90%;
+    }
 }

@@ -184,6 +184,7 @@ p {
     font-size: 1.2em;
     max-width: 50rem;
     margin: 3em 0;
+    line-height: 1.1rem;
 }
 .center_text { text-align: center; }
 .left_text { text-align: left; }
@@ -226,4 +227,21 @@ footer figure {
 
 .malo_kasnija_animacija.pop {
     transform: scale(100%)
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+    p {
+        font-size: 0.8em;
+        max-width: 30rem;
+    }
+    h1 {
+        font-size: 3em;
+        color: var(--orange);
+        line-height:1em;
+    }
+    h2 {
+        font-size: 1em;
+    }
 }
