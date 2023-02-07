@@ -27,6 +27,7 @@ p {
 .pola-pola figure {
     max-width: min(600px, 45%);
 }
+.pola-pola{align-items: center}
 
 .pola-pola.prvi {
     margin-top: 0px;
@@ -71,7 +72,7 @@ span.wide {
 }
 
 /* Telefon */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .pola-pola {
         flex-direction: column;
     }
