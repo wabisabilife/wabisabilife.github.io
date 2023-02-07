@@ -49,6 +49,7 @@ h1 {
 
 .card p {
     margin: 1em 0;
+    font-size: 20px;
 }
 .card div {
     padding-bottom: 3em;
@@ -78,6 +79,7 @@ h1 {
 @media only screen and (max-width: 1000px) {
     .card{
         flex-direction: column;
+        justify-content: start;
     }
 
     .card figure {
@@ -90,5 +92,10 @@ h1 {
 
     h1{
         font-size: 5em;
+    }
+
+    .paddedp p {
+        max-width: 30rem;
+        margin: 10vh auto !important;
     }
 }

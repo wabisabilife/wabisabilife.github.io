@@ -112,7 +112,7 @@ nav:hover ul li {
 }
 nav > a {
     display: inline-flex;
-    height: 1.2em;
+    height: 50px;
     overflow: hidden;
     flex-direction: column;
     font-size: 2.5rem;
@@ -181,7 +181,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 20px;
     max-width: 50rem;
     margin: 3em 0;
     line-height: 1.1rem;
@@ -233,7 +233,7 @@ footer figure {
 /* Tablet */
 @media only screen and (max-width: 1000px) {
     p {
-        font-size: 0.8em;
+        font-size: 20px;
         max-width: 30rem;
     }
     h1 {
@@ -243,5 +243,9 @@ footer figure {
     }
     h2 {
         font-size: 1em;
+    }
+
+    section.dropdown {
+        height: 50vw;
     }
 }
