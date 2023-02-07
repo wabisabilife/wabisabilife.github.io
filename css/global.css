@@ -28,7 +28,7 @@ h1, h2, h3, title {
     height: 20px;
     width: 20px;
     background: var(--orange);
-    margin: 10px auto;
+    margin: 10px auto !important;
 }
 
 .white_dot {
