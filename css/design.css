@@ -11,6 +11,7 @@ h1 {
 h2 {
     font-size: 2em;
     margin:20px 80px;
+    color: var(--orange);
 }
 
 p {
@@ -25,6 +26,7 @@ p {
 
 .pola-pola figure {
     max-width: 400px;
+    margin: 20px 80px;
 }
 .pola-pola {
     align-items: center;

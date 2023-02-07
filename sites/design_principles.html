@@ -47,7 +47,13 @@
 
         <div class="flex-center-column">
             <p class="center_text fader">If we marked the key types of Japanese taste on a spectrum, it would look something like this:</p>
-            <figure><img src="../pictures/dp/timeline.png"></figure>
+
+            <figure>
+                <video muted style="width: 100%; height: auto;" id="spectrumvideo">
+                    <source src="../pictures/dp/animacija_spectrum.mp4" type="video/mp4">
+                </video>
+            </figure>
+
             <p class="fader">It is impossible to create a spectrum of all the elements of wabi-sabi. The spectrums provide a further breakdown of qualities that commonly characterize wabi-sabi and are open to subjective interpretation. A dynamic continuum better conveys the qualities of the aesthetic than a static rubric that either supports or contradicts wabi-sabi.</p>
         </div>
         <article class="pola-pola fader">
@@ -106,6 +112,20 @@
         setTimeout(()=>{
             document.getElementById("circlevideo").play();
         }, 100)
+
+        //video observer
+        let videoObserver = new IntersectionObserver( (v)=>{
+            if(v[0].isIntersecting){
+                console.log("da")
+                v[0].target.play();
+                videoObserver.unobserve(v[0].target);
+            }
+        }, { rootMargin: "-200px" })
+
+
+        sv = document.getElementById("spectrumvideo");
+        console.log(sv)
+        videoObserver.observe(sv)
     </script>
 </body>
 </html>
