@@ -101,7 +101,7 @@ span.wide {
     filter: brightness(0) invert(1);
 }
 .fullscreen {
-    min-height: 110vh;
+    min-height: 102vh;
 }
 
 .kratkip {
