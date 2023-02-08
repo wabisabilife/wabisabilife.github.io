@@ -5,19 +5,19 @@ figure {
 
 h1 {
     color: var(--lightest);
-    margin: 220px 1em 20px 80px;
+    margin: 220px 1em 20px 100px;
     max-width: 50rem;
 }
 
 h2 {
     font-size: 1em;
-    margin: 1em 2em 1em 80px;
+    margin: 1em 2em 1em 100px;
     color: var(--light);
 }
 
 p {
     max-width: 45rem;
-    margin: 20px 20px 20px 80px;
+    margin: 20px 20px 20px 100px;
 }
 .left-column {
     display: flex;
@@ -87,4 +87,8 @@ span.wide {
     .pola-pola figure {
         max-width: 90%;
     }
+}
+
+.ketldole {
+    align-items: end;
 }

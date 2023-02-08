@@ -4,7 +4,6 @@ main {
 }
 
 h1 {
-    margin: 2em 1em 20px 80px;
     max-width: 30rem;
 }
 
@@ -25,15 +24,19 @@ p {
 }
 @media only screen and (min-width: 800px) {
     .pola-pola figure {
-        max-width: min(400px, 30vw);
+        max-width: min(500px, 40vw);
     }
 
     .pola-pola figure:nth-child(even), .pola-pola div:nth-child(even) {
-        margin: 20px 80px 20px 10px;
+        margin: 20px 100px 20px 10px;
     }
 
     .pola-pola figure:nth-child(odd), .pola-pola div:nth-child(odd) {
-        margin: 20px 10px 20px 80px;
+        margin: 20px 10px 20px 100px;
+    }
+
+    .pola-pola p {
+        max-width: 30rem;
     }
 }
 .pola-pola {
@@ -55,6 +58,11 @@ p {
     }
 
     .pola-pola h2, .pola-pola p, .pola-pola figure {
-        margin: 20px 80px;
+        margin: 20px 100px;
     }
+}
+
+#kruggif {
+    margin: 20px;
+    margin-right: 100px;
 }
