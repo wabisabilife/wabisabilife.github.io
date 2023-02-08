@@ -94,14 +94,14 @@ span.wide {
 }
 
 .ketldole {
-    align-items: end;
+    margin-top: 10%;
 }
 
 .bijelilogo {
     filter: brightness(0) invert(1);
 }
 .fullscreen {
-    min-height: 102vh;
+    min-height: 110vh;
 }
 
 .kratkip {
