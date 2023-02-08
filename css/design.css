@@ -29,11 +29,11 @@ p {
     }
 
     .pola-pola figure:nth-child(even), .pola-pola div:nth-child(even) {
-        margin: 20px 100px 20px 10px;
+        margin: 20px max(100px, 10vw) 20px 10px;
     }
 
     .pola-pola figure:nth-child(odd), .pola-pola div:nth-child(odd) {
-        margin: 20px 10px 20px 100px;
+        margin: 20px 10px 20px max(100px, 10vw);
     }
 
     .pola-pola p {
@@ -59,11 +59,11 @@ p {
     }
 
     .pola-pola h2, .pola-pola p, .pola-pola figure {
-        margin: 20px 100px;
+        margin: 20px max(100px, 10vw);
     }
 }
 
 #kruggif {
     margin: 20px;
-    margin-right: 100px;
+    margin-right: max(100px, 10vw);
 }

@@ -5,22 +5,22 @@ figure {
 
 h1 {
     color: var(--lightest);
-    margin: 220px 1em 20px 100px;
+    margin: 220px 1em 20px max(100px, 10vw);
     max-width: 50rem;
 }
 
 h2 {
     font-size: 2em;
-    margin: 20px 20px 0 100px;
+    margin: 20px 20px 0 max(100px, 10vw);
     color: var(--light);
 }
 
 p {
     max-width: 45rem;
-    margin: 20px 20px 0 100px;
+    margin: 20px 20px 0 max(100px, 10vw);
 }
 .rightp {
-    margin: 20px 100px 0 20px;
+    margin: 20px max(100px, 10vw) 0 20px;
 }
 
 .left-column {
