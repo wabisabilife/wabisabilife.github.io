@@ -96,3 +96,14 @@ span.wide {
 .ketldole {
     align-items: end;
 }
+
+.bijelilogo {
+    filter: brightness(0) invert(1);
+}
+.fullscreen {
+    min-height: 110vh;
+}
+
+.kratkip {
+    max-width: 25rem;
+}

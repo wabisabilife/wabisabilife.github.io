@@ -1,5 +1,4 @@
 function backToTop(){
-    console.log("ae")
     window.scrollTo({
         top:0,
         left:0,
@@ -13,13 +12,12 @@ let prosliScroll = 0
 
 function sakrijLogo(){
     let navHoveran = nav.matches(':hover')
-    console.log(navHoveran)
     if(window.scrollY > prosliScroll && !navHoveran ) logo.classList.add('transparent');
     else logo.classList.remove('transparent');
     prosliScroll = window.scrollY;
 }
 let nav = document.getElementById('nav');
-function otkrijLogo(){console.log("ebnter");logo.classList.remove('transparent');}
+function otkrijLogo(){ logo.classList.remove('transparent');}
 
 //intersection observer code
 
@@ -49,7 +47,6 @@ setTimeout(()=>{
     malo_kasniji = document.querySelectorAll('.malo_kasnija_animacija')
     malo_kasniji.forEach(el => {el.classList.add('pop')})
 },900)
-
 
 
 
