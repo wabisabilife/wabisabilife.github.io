@@ -211,7 +211,7 @@ footer figure {
 .pola-pola {
     margin-top: -1em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .pola-pola >* {
     max-width: 55%;
