@@ -5,18 +5,18 @@ main {
 
 h1 {
     max-width: 30rem;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 h2 {
     font-size: 2em;
-    margin:20px 0;
+    margin:30px 0;
     color: var(--orange);
 }
 
 p {
     max-width: 45rem;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .left-column {
     display: flex;
@@ -66,4 +66,8 @@ p {
 #kruggif {
     margin: 20px;
     margin-right: max(100px, 10vw);
+}
+
+.fullscreen {
+    min-height: 110vh;
 }

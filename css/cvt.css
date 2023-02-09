@@ -40,7 +40,7 @@ p {
     margin-top: 40px;
 }
 .odmaknut {
-    margin: 1em 3em;
+    margin: 1em max(100px, 10vw);
 }
 
 .hover-image {
