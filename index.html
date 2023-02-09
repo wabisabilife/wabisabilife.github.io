@@ -19,7 +19,7 @@
             <span class="inner" aria-hidden="true">
                 <span class="content">Wabi-sabi</span>
             </span>
-            <span class="icon"><img src="pictures/logo.png"> </span>
+            <span class="icon"><img src="pictures/logo.png" id="cosaklogo"> </span>
         </a>
 
         <section class="dropdown">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="card fullscreen">
+            <div class="card fullscreen" id="prvakartica">
                 <div>
                     <h2>WABI</h2>
                     <p class="fader">The word "wabi" derives from the root wa, which stands for balance, tranquility, harmony, and serenity. Wabi originally meant melancholy, loneliness, and sadness, but it has grown to imply straightforwardness, materialistic-freedoom, humbleness by choice, and in one with nature. It's a transcendental beauty made possible by a tiny flaw.
@@ -99,6 +99,21 @@
     </main>
     <script src="./javascripts/indexAnimations.js"></script>
     <script>
+
+
+        let cosaklogo = document.getElementById("cosaklogo");
+        let main = document.querySelectorAll("main")[0];
+        prva = document.getElementById("prvakartica")
+
+
+        document.addEventListener("scroll", ()=>{
+            if(prva.getBoundingClientRect().y < 1){
+                cosaklogo.classList.add("bijelilogo")
+            }
+            else cosaklogo.classList.remove("bijelilogo");
+        });
+
+
         //za playanje video animacije
 
         const videoobserver = new IntersectionObserver(entries => {

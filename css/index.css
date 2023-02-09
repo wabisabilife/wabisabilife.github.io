@@ -100,3 +100,8 @@ h1 {
         margin: 10vh auto !important;
     }
 }
+
+
+.bijelilogo {
+    filter: brightness(0) invert(1);
+}
