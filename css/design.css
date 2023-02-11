@@ -77,8 +77,8 @@ p {
         flex-direction: column-reverse;
     }
 
-    .pola-pola h2, .pola-pola p, .pola-pola figure {
-        margin: 20px 0;
+     h2, h1, p, figure {
+        margin: 20px;
     }
     .fullscreen {
         min-height: 90vh;
