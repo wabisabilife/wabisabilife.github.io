@@ -78,7 +78,7 @@ p {
     }
 
      h2, h1, p, figure {
-        margin: 20px;
+        margin: max(40px, 5vw);
     }
     .fullscreen {
         min-height: 90vh;

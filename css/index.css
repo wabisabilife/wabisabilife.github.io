@@ -80,7 +80,7 @@ h1 {
     .card{
         flex-direction: column;
         justify-content: start;
-        padding: 20px max(2em, 5vw);
+        padding: 20px max(40px, 5vw);
     }
 
     .card figure {

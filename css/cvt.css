@@ -1,4 +1,6 @@
-
+body {
+    width: 100%;
+}
 figure {
     margin: 0;
 }
@@ -7,6 +9,8 @@ h1 {
     color: var(--lightest);
     margin: 220px 1em 20px max(100px, 10vw);
     max-width: 50rem;
+    line-break: strict;
+    min-width: 40rem;
 }
 
 h2 {
@@ -78,6 +82,13 @@ span.wide {
     max-width: 25rem;
 }
 
+.ketldole {
+    margin-top: 10%;
+}
+
+.bijelilogo {
+    filter: brightness(0) invert(1);
+}
 
 /* Telefon */
 @media only screen and (max-width: 900px) {
@@ -95,7 +106,7 @@ span.wide {
         align-items: end;
     }
     .pola-pola figure {
-        max-width: min(600px, 90%);
+        max-width: min(500px, 90%);
         padding-top: 40px;
     }
     .pola-pola.prvi figure {
@@ -105,7 +116,7 @@ span.wide {
 
 
     h1 {
-        margin: 160px 1em 20px 20px;
+        margin: 160px 1em 20px max(40px, 5vw);
     }
     p, h2 , .kratkip {
         max-width: 40rem;
@@ -114,7 +125,7 @@ span.wide {
         font-size: 1.5em;
     }
     .rightp, h2, .odmaknut , p {
-        margin: 20px 20px 0 20px;
+        margin: 20px max(40px, 5vw) 0 max(40px, 5vw);
     }
     .odmaknut div >* {
         margin-left: 0;
@@ -125,18 +136,9 @@ span.wide {
 
     .ketldole {
         margin-inline: auto;
+        margin-top: -200px;
+        padding-top: 0;
     }
 
 
-}
-
-.ketldole {
-    margin-top: 10%;
-}
-
-.bijelilogo {
-    filter: brightness(0) invert(1);
-}
-.fullscreen {
-    min-height: 110vh;
 }
