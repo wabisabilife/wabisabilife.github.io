@@ -84,7 +84,7 @@ h1 {
     }
 
     .card figure {
-        max-width: 90%;
+        max-width: min(500px, 90%);
         height: fit-content;
     }
     .card div {

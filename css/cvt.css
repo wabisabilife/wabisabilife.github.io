@@ -74,6 +74,10 @@ p {
 span.wide {
     width: 80%;
 }
+.kratkip {
+    max-width: 25rem;
+}
+
 
 /* Telefon */
 @media only screen and (max-width: 900px) {
@@ -82,7 +86,8 @@ span.wide {
         align-items: normal;
     }
 
-    .pola-pola >* {
+    .pola-pola div {
+        margin: 0 auto ;
         max-width: 100%;
     }
     .pola-pola:nth-child(4n){
@@ -90,24 +95,38 @@ span.wide {
         align-items: end;
     }
     .pola-pola figure {
-        max-width: 90%;
+        max-width: min(600px, 90%);
+        padding-top: 40px;
+    }
+    .pola-pola.prvi figure {
+        padding-top: 0;
     }
 
 
 
     h1 {
-        margin: 220px 1em 20px max(2em, 5vw);
+        margin: 220px 1em 20px 20px;
     }
-    p {
-        max-width: 30rem;
-        margin: 20px max(2em, 5vw);
+    p, h2 , .kratkip {
+        max-width: 40rem;
     }
     h2 {
         font-size: 1.5em;
     }
-    .rightp, h2, .odmaknut {
+    .rightp, h2, .odmaknut , p {
         margin: 20px 20px 0 20px;
     }
+    .odmaknut div >* {
+        margin-left: 0;
+    }
+    .odmaknut figure {
+        margin: 0 auto;
+    }
+
+    .ketldole {
+        margin-inline: auto;
+    }
+
 
 }
 
@@ -120,8 +139,4 @@ span.wide {
 }
 .fullscreen {
     min-height: 110vh;
-}
-
-.kratkip {
-    max-width: 25rem;
 }

@@ -242,7 +242,7 @@ footer figure {
 /* Tablet */
 @media only screen and (max-width: 1000px) {
     p {
-        font-size: 15px;
+        font-size: 20px;
         max-width: 30rem;
         line-height: 1.2rem;
     }
@@ -266,5 +266,10 @@ footer figure {
         margin-top: 0;
         display: flex;
         justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 15px;
     }
 }
