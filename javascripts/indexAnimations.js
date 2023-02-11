@@ -48,7 +48,9 @@ setTimeout(()=>{
     malo_kasniji.forEach(el => {el.classList.add('pop')})
 },900)
 
-
+function toHome(){
+    window.location.href = "../index.html";
+}
 
 
 
