@@ -10,7 +10,6 @@ h1 {
     margin: 220px 1em 20px max(100px, 10vw);
     max-width: 50rem;
     line-break: strict;
-    min-width: 40rem;
 }
 
 h2 {
