@@ -80,11 +80,15 @@ p {
      h2, h1, p, figure {
         margin: max(40px, 5vw);
     }
+     h1 {
+         margin-top: calc(150px - 1em);
+     }
     .fullscreen {
         min-height: 90vh;
     }
     #kruggif {
         margin: 0 auto;
+        max-width: 60%;
     }
 
 }

@@ -60,7 +60,7 @@ h1 {
     padding-top: 30px;
 }
 .paddedp p {
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 4em auto !important;
 }
 #firstcard {
@@ -91,12 +91,16 @@ h1 {
         padding-bottom: 0;
     }
 
+    .card h2 {
+        font-size: 1.5em;
+    }
+
     h1{
         font-size: max(3.5em, 12vw);
     }
 
     .paddedp p {
-        max-width: 30rem;
+        max-width: 40rem;
         margin: 10vh auto !important;
     }
 }

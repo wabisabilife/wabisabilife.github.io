@@ -109,8 +109,9 @@ nav span.inner {
 nav:hover span.inner {
     transform: translateY(-100%);
 }
-nav:hover span.icon {
+nav:hover span.icon.bijelilogo {
     /* effect na ikonicu */
+    filter: none;
 }
 nav:hover section.dropdown {
     transform: translateY(-10px);
@@ -243,7 +244,7 @@ footer figure {
 @media only screen and (max-width: 1000px) {
     p {
         font-size: 20px;
-        max-width: 30rem;
+        max-width: 40rem;
         line-height: 1.2rem;
     }
     h1 {
@@ -266,6 +267,11 @@ footer figure {
         margin-top: 0;
         display: flex;
         justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 600px){
+    h1 {
+        font-size: 2em;
     }
 }
 @media only screen and (max-width: 500px) {
