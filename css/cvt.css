@@ -76,9 +76,10 @@ span.wide {
 }
 
 /* Telefon */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .pola-pola {
         flex-direction: column;
+        align-items: normal;
     }
 
     .pola-pola >* {
@@ -91,6 +92,23 @@ span.wide {
     .pola-pola figure {
         max-width: 90%;
     }
+
+
+
+    h1 {
+        margin: 220px 1em 20px max(2em, 5vw);
+    }
+    p {
+        max-width: 30rem;
+        margin: 20px max(2em, 5vw);
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .rightp, h2, .odmaknut {
+        margin: 20px 20px 0 20px;
+    }
+
 }
 
 .ketldole {
