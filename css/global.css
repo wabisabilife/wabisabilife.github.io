@@ -272,4 +272,13 @@ footer figure {
     p {
         font-size: 15px;
     }
+
+    nav > a {
+        padding-left: 50px;
+        margin-left: max(30px, 10vw);
+    }
+    nav ul {
+        margin-left: calc(max(50px, 10vw));
+        margin-bottom: 120px;
+    }
 }
