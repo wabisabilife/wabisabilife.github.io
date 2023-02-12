@@ -139,7 +139,7 @@ section.dropdown {
     z-index: 1;
     background: rgba(253, 249, 242, 0.8);
     top: 0;
-    height: 60vh;
+    height: min(60vh, 500px);
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -282,9 +282,15 @@ footer figure {
     nav > a {
         padding-left: 50px;
         margin-left: max(30px, 10vw);
+        font-size: 2rem;
+        line-height: 1.3em;
     }
     nav ul {
         margin-left: calc(max(50px, 10vw));
-        margin-bottom: 120px;
+        margin-bottom: 150px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
     }
 }

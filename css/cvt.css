@@ -88,6 +88,9 @@ span.wide {
 .bijelilogo {
     filter: brightness(0) invert(1);
 }
+.fullscreen {
+    min-height: 102vh;
+}
 
 /* Telefon */
 @media only screen and (max-width: 900px) {
@@ -136,10 +139,11 @@ span.wide {
         margin: 0 auto;
     }
 
-    .ketldole {
+    figure.ketldole {
         margin-inline: auto;
-        margin-top: -200px;
+        margin-top: -150px;
         padding-top: 0;
+        max-width: min(600px, 90%);
     }
 
 
