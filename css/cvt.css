@@ -121,13 +121,14 @@ span.wide {
 
 
     h1 {
-        margin: calc(150px - 1em) 1em 20px max(40px, 5vw);
+        margin: 110px 1em 20px max(40px, 5vw);
     }
     p, h2 , .kratkip {
         max-width: 40rem;
     }
     h2 {
         font-size: 1.5em;
+        line-height: 1.6rem;
     }
     .rightp, h2, .odmaknut , p {
         margin: 20px max(40px, 5vw) 0 max(40px, 5vw);
@@ -141,7 +142,7 @@ span.wide {
 
     figure.ketldole {
         margin-inline: auto;
-        margin-top: -150px;
+        margin-top: -120px;
         padding-top: 0;
         max-width: min(600px, 90%);
     }
