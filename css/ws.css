@@ -21,7 +21,6 @@ p {
 main article {
     display: flex;
     flex-direction:column ;
-    align-items: center;
 }
 @media only screen and (max-width: 900px) {
 
@@ -30,5 +29,8 @@ main article {
     }
     h2, p, figure {
         margin: max(40px, 5vw);
+    }
+    main article {
+        align-items: center;
     }
 }
