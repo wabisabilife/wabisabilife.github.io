@@ -50,7 +50,6 @@ h1 {
 
 .card p {
     margin: 1em 0;
-    color: var(--lightest);
 }
 .card div {
     padding-bottom: 3em;
